@@ -1,0 +1,18 @@
+<div layout="vertical" layout-fill>
+<md-sidenav class="md-sidenav-left md-whiteframe-z2"
+            md-component-id="left"
+            md-is-locked-open="$mdMedia('gt-sm')">
+
+    <md-content role="navigation">
+        <md-list ng-repeat="section in menuVm.data.sidenav.sections">
+            <xxx-section section="section"></xxx-section>
+        </md-list>
+        <md-list>
+            <md-list-item ng-repeat="action in menuVm.data.sidenav.actions">
+                <xxx-item action="action"></xxx-item>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>
+</div>
+

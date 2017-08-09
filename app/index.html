@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="contactManagerApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="./bower_components/angular-material-icons/angular-material-icons.css"/>
+    <link rel="stylesheet" href="./assets/app.css"/>
+    
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+          display: none !important;
+        }
+    </style>
+  </head>  
+  <body ng-cloak ng-controller="mainController as vm">
+    
+    <!--<div ng-include="'dist/view/sidenav.html'" layout="vertical"></div>-->
+    <!---->
+    <!--<div layout="column" flex id="wrapper">-->
+      <!--<div ng-include="'dist/view/toolbar-header.html'"></div>-->
+      <!--<md-content flex id="content">-->
+        <!--<div ng-include="'dist/view/main-content.html'"></div>-->
+        <!---->
+
+      <!--</md-content>-->
+    <!--</div>-->
+
+    <xxx-app title="Whitewater Adventures"
+             subtitle="Administrative Application"
+             icon-file="images/kayak-icon-flat.png">
+      <xxx-menu></xxx-menu>
+    </xxx-app>
+    
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    <script src="./bower_components/angular-messages/angular-messages.js"></script>
+    <script src="./bower_components/angular-material-icons/angular-material-icons.js"></script>
+    
+    <script src="./dist/models.js"></script>
+    <script src="./dist/services/userService.js"></script>
+    <script src="./dist/controllers/addUserDialogController.js"></script>
+    <script src="./dist/controllers/contactPanelController.js"></script>
+    <script src="./dist/controllers/mainController.js"></script>
+    <script src="./dist/boot.js"></script>
+    <script src="./dist/framework-app/framework-app-module.js"></script>
+    <script src="./dist/framework-app/framework-app-controller.js"></script>
+    <script src="./dist/framework-app/framework-app.js"></script>
+    <script src="./dist/framework-menu/framework-menu-module.js"></script>
+    <script src="./dist/framework-menu/framework-menu-controller.js"></script>
+    <script src="./dist/framework-menu/framework-menu.js"></script>
+    <script src="./dist/framework-menu-section/framework-menu-section-module.js"></script>
+    <script src="./dist/framework-menu-section/framework-menu-section-controller.js"></script>
+    <script src="./dist/framework-menu-section/framework-menu-section.js"></script>
+    <script src="./dist/framework-menu-item/framework-menu-item-module.js"></script>
+    <script src="./dist/framework-menu-item/framework-menu-item-controller.js"></script>
+    <script src="./dist/framework-menu-item/framework-menu-item.js"></script>
+  </body>
+  
+</html>

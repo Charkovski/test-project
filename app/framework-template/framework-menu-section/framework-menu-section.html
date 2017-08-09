@@ -1,0 +1,8 @@
+<md-list-item ng-click="sectionVm.section.expand = !sectionVm.section.expand">
+    <p class="md-subheader md-primary">{{sectionVm.section.name}}</p>
+    <span flex></span>
+    <md-icon class="md-primary md-icon-button">{{sectionVm.section.expand ? 'arrow_drop_up' : 'arrow_drop_down'}}</md-icon>
+</md-list-item>
+<md-list-item ng-show="section.expand" ng-repeat="action in sectionVm.section.actions">
+    <xxx-item action="action"></xxx-item>
+</md-list-item>

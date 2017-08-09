@@ -1,0 +1,22 @@
+<div layout="row" layout-fill>
+    <div ng-transclude></div>
+    <div layout="column" flex>
+        <md-toolbar>
+            <div layout="row" class="md-toolbar-tools">
+                <md-button hide-gt-sm ng-click="toggleSideNav()" class="md-icon-button">
+                    <md-icon>menu</md-icon>
+                </md-button>
+                <div layout="column" flex>
+                    <h2 md-truncate>{{ title }}</h2>
+                    <h2 md-truncate>{{ subtitle }}</h2>
+                </div>
+                <md-button hide-gt-sm ng-click="logout()" class="md-icon-button">
+                    <md-icon>input</md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-content flex id="content">
+            Content
+        </md-content>
+    </div>
+</div>

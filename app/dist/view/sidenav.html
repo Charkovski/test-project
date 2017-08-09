@@ -1,0 +1,20 @@
+ <md-sidenav class="md-sidenav-left md-whiteframe-z2" 
+                md-component-id="left" 
+                md-is-locked-open="$mdMedia('gt-sm')">
+
+   <md-content role="navigation">
+     <md-list ng-repeat="section in vm.data.sidenav.sections">
+       <md-list-item ng-click="section.expand = !section.expand">
+         <p class="md-subheader md-primary">{{section.name}}</p>
+         <span flex></span>
+         <md-icon class="md-primary md-icon-button">{{section.expand ? 'arrow_drop_up' : 'arrow_drop_down'}}</md-icon>
+       </md-list-item>
+       <md-list-item ng-show="section.expand" ng-repeat="action in section.actions" ng-click="toast(action.link)">
+         <md-icon>{{action.icon}}</md-icon>
+         <p class="md-body-2">{{action.name}}</p>
+         <span flex></span>
+         <md-icon>chevron_right</md-icon>
+       </md-list-item>
+     </md-list>
+   </md-content>
+</md-sidenav>
